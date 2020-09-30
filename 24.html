@@ -7,14 +7,15 @@
 </head>
 <body>
     <script>
-    let temperatura = window.prompt (`di una temperatura e indica con una c si quieres convertirla a centígrados y con una f si quieres que sean fahrenheit`.toLowerCase())
+    let temperatura = parseInt (window.prompt ('di una temperatura'))
+    let como = window.prompt (`indica con una c si quieres convertirla a centígrados y con una f si quieres que sean fahrenheit`.toLowerCase())
     let temperaturaCenti
     let temperaturaFah
-    if (temperatura == 'c') {
-        temperaturaCenti = parseInt ((temperatura-32)*5/9)
+    if (como == 'c') {
+        temperaturaCenti = (temperatura-32)*5/9
         window.alert (`la temperatura es ${temperaturaCenti} grados centígrados`)
-    } else if (temperatura == 'f') {
-        temperaturaFah = parseInt (temperatura*9/5+32)
+    } else if (como == 'f') {
+        temperaturaFah = temperatura*9/5+32
         window.alert (`la temperatura es ${temperaturaFah} fahrenheit`)
     } else 
         window.alert ('el dato introducido no es correcto')
