@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pedido = window.prompt (`Elige una de estas opciones: 
+        a platos
+        b bebida`.toLowerCase())
+        let pedidoDos
+        let pedidoTres
+        if (pedido == 'a') {
+            pedidoDos = window.prompt (`Elige una de estos platos:
+            a hamburguesa de pollo
+            b hamburguesa vegana`.toLowerCase())
+        }   if (pedidoDos == 'a') {
+            window.alert ('Has pedido hamburguesa de pollo')
+        }   else if (pedidoDos == 'b') {
+            window.alert ('Has pedido hamburguesa vegana')
+        }   else {
+            window.alert ('No has seleccionado una opción valida')
+        }
+        if (pedido == 'b') {
+            pedidoTres = window.prompt (`Elige una de estas bebidas
+            a coca cola
+            b agua`.toLowerCase())
+        }   if (pedidoTres == 'a') {
+            window.alert ('Has pedido coca cola')
+        }   else if (pedidoTres == 'b') {
+        window.alert ('Has pedido agua')
+        }   else {
+            window.alert ('No has seleccionado una opción valida')
+        }
+        switch (pedidoDos) {
+            case 'a':
+            window.alert ('Has pedido hamburguesa de pollo')
+            break
+            case 'b':
+            window.alert ('Has pedido hamburguesa vegana')
+            break
+            default :
+            window.alert ('No has seleccionado una opción valida')
+        }
+        switch (pedidoTres) {
+            case 'a':
+            window.alert ('Has pedido coca cola')
+            break
+            case 'b' :
+            window.alert ('Has pedido agua')
+            break
+            default :
+            window.alert ('No has seleccionado una opción valida')
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

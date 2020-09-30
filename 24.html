@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let temperatura = window.prompt (`di una temperatura e indica con una c si quieres convertirla a centígrados y con una f si quieres que sean fahrenheit`.toLowerCase())
+    let temperaturaCenti
+    let temperaturaFah
+    if (temperatura == 'c') {
+        temperaturaCenti = parseInt ((temperatura-32)*5/9)
+        window.alert (`la temperatura es ${temperaturaCenti} grados centígrados`)
+    } else if (temperatura == 'f') {
+        temperaturaFah = parseInt (temperatura*9/5+32)
+        window.alert (`la temperatura es ${temperaturaFah} fahrenheit`)
+    } else 
+        window.alert ('el dato introducido no es correcto')
+    </script>
+</body>
+</html>

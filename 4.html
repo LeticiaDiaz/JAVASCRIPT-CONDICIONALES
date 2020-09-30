@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeroUno = parseInt ( window.prompt ('inserte un numero'))
+        let numeroDos = parseInt ( window.prompt ('inserte un numero'))
+        let numeroTres = parseInt ( window.prompt ('inserte un numero'))
+        let difUno = numeroUno - numeroDos 
+        let difDos = numeroUno - numeroTres
+        let difTres = numeroDos - numeroTres
+        if (difUno<0) {
+         difUno = difUno*(-1)
+        } else if (difDos<0) {
+            difDos = difDos*(-1)
+        } else if (difTres<0) {
+            difTres = difTres*(-1)
+        } else {
+
+        }
+
+
+        if (difUno == 20 ) { 
+            console.log (`La diferencia entre ${numeroUno} y ${numeroDos} es 20`)
+        } else if (difDos == 20 ) { 
+            console.log (`La diferencia entre ${numeroUno} y ${numeroTres} es 20`) 
+        } else if (difTres == 20 ) { 
+            console.log (`La diferencia entre ${numeroDos} y ${numeroTres} es 20`)
+        } else {console.log ('ninguno de los numeros tiene una diferencia de 20')
+        }
+     </script>
+</body>
+</html>

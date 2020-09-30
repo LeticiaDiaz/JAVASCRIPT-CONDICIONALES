@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let numeroUno = window.prompt ('inserte un numero comprendido entre 25 y 75 sin decimales')
+    let numeroDos = window.prompt ('inserte un numero comprendido entre 25 y 75 sin decimales')
+let digito11=1
+let digito12=2
+let digito21=3
+let digito22=4
+
+    if (numeroUno>=25 && numeroUno<=75) {
+        digito11 = numeroUno.substring(0,1)
+        digito12 = numeroUno.substring(1)
+    } else {
+        console.log ('el número introducido no cumple los requisitos')
+    }
+    if (numeroDos>=25 && numeroDos<=75) {
+        digito21 = numeroDos.substring(0,1)
+        digito22 = numeroDos.substring(1)
+    } else {
+        console.log ('el número introducido no cumple los requisitos')
+    }
+    if (digito11==digito21 || digito11==digito22) {
+        console.log ('los números tienen digitos en comun')
+    } else if (digito12==digito21 || digito12==digito22) {
+        console.log ('los números tienen digitos en comun')
+    } else {
+        console.log ('los números no tienen ningun digito en comun')
+    }
+    </script>
+</body>
+</html>

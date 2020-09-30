@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let numeroUno = parseInt ( window.prompt ('inserte un numero'))
+    let numeroDos = parseInt ( window.prompt ('inserte un numero'))
+    let resultadoUno = numeroUno%6
+    let resultadoDos = numeroDos%6
+    if (numeroUno == numeroDos) {
+        console.log (0)
+    } else if (resultadoUno == resultadoDos ){
+        if (numeroUno<numeroDos) {
+            console.log (numeroUno)
+        } else {
+            console.log (numeroDos)
+        }
+    } else {
+        if (numeroUno>numeroDos) {
+            console.log (numeroUno)
+        } else {
+            console.log (numeroDos)
+        }
+    }
+
+    </script>
+</body>
+</html>

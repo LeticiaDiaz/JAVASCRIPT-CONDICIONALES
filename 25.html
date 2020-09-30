@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = window.prompt ('indica tu nombre')
+        let ventas = parseInt (window.prompt ('indica cuánto has vendido'))
+        let ventasExtra
+        if (ventas >500) {
+            ventasExtra = ventas*5/100
+            window.alert (`${nombre} ha vendido ${ventas} por lo que ha ganado ${ventasExtra}`)                                                                                                                                                                                              
+        } else if (ventas <=500) {
+            window.alert (`${nombre} ha vendido ${ventas}`) 
+        }
+
+
+
+    </script>
+</body>
+</html>
